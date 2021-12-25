@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>ByteMe</title>
+  <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+     $(document).ready(function(){
+     $(window).bind('scroll', function() {
+     var navHeight = $( window ).height() - 70;
+       if ($(window).scrollTop() > navHeight) {
+         $('nav').addClass('fixed');
+       }
+       else {
+         $('nav').removeClass('fixed');
+       }
+    });
+  });
+</script>
+<body>
+  <div class="intro">
+    <div class = titles>
+    <h1 id=title1> <span>B</span>ETWEEN </h1> <!-- I want this to like show up first and fade away, then our title comes up next -->
+<!--     <div id=line1></div>
+    <div id=line2></div> -->
+
+    <h1 id=title2> THE </h1>
+    <h1 id=title3>LINES</h1>
+
+  </div>
+  <h1 id=desc>Your complete guide to <span class="realistic-marker-highlight">reclaiming</span> your privacy</h1>
+  <nav>
+     <ul>
+        <li id="center"><a href="#">More</a></li>
+        <li><a href="#">Team</a></li>
+     </ul>
+  </nav>
+    
+  </div>
+  
+  <div class="wrapper">
+  
+  <div class="scroll-cards">
+    <article class="scroll-cards__item item1" aria-label="Wie - 1">
+      <a href="./summarization.html"><h2><span class="outline">SUMMARIZE </span>PRIVACY POLICY</h2></a>
+    </article>
+    <article class="scroll-cards__item item2" aria-label="Wie - 1">
+      <a href="./readability.html"><h2><span class="outline">CHECK READABILITY</span></h2></a>
+    </article>
+    <article class="scroll-cards__item item3" aria-label="Wie - 1">
+      <a href="./data_leaks.html"><h2>DATA LEAKS <span class="outline"> INSIGHTS</span></h2></a>
+    </article>
+    <article class="scroll-cards__item item4" aria-label="Wie - 1">
+      <a href="./topic_modeling.html"><h2>TOPIC <span class="outline">MODELING</span></h2></a>
+    </article> 
+    <article class="scroll-cards__item item5" aria-label="Wie - 1">
+      <a href="./similarity.html"><h2>SIMILARITY ANALYSIS <span class="outline"></span></h2></a>
+    </article> 
+  </div>
+</div>
+
+<div class="arrow"></div>
+<div class="learn"> Learn More</div>
+
+
+<!--   <div id="link_area">
+    <a href="./summarization.html">
+      <div class="link_box">
+        Summarize Your Policy Page With Our Own ML Model 
+      </div>
+    </a>
+    <a href="./readability.html">
+      <div class="link_box">
+        Too Hard to Read? Check the Readability of Your Privacy Page
+      </div>
+    </a>
+    <a href="./data_leaks.html">
+      <div class="link_box">
+        Want to Know if Your Data Has Been Leaked?
+      </div>
+    </a>
+  </div> -->
+
+
+  
+</body>
+<svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+  <defs>
+    <filter id="marker-shape">
+      <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+      <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+    </filter>
+  </defs>
+</svg>
+
+</html>

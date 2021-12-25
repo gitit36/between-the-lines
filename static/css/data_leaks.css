@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+.outline{
+    color: white;
+    font-family: 'Bakbak One', cursive;
+    padding-left: 60px;
+}
+
+body {
+	background: black;
+  display: flex;
+  justify-content: center;
+}
+.search {
+/*  position: relative;*/
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.wrapper{
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.searchTerm {
+  width: 80%;
+  border: 3px solid #EFE5DC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #EFE5DC;
+  background: black;
+}
+
+.searchTerm:focus{
+  color: #ff3333;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #ff3333;
+  background: #ff3333;
+  text-align: center;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/*.wrap{
+  display: flex;
+  justify-content: center;
+}*/
+#text{
+	margin-top: 70px;
+	margin-left: 270px;
+	border: 1px solid #EFE5DC;
+	width: 60%;
+	height: 500px;
+
+}
+
+#submit_form{
+  width: 500px;
+  height: 40px;
+
+}
+
+#url{
+  width: 300px;
+  height: 80%;
+}
+
+#submit_button{
+  background-color: #f38686;
+  color: white;
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+#result{
+  color: white;
+}
+#container1{
+  display: flex;
+}
+#left{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 60px;
+}
+
+#right{
+  color: white;
+  padding-left: 30px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.fade{
+  margin-top: 60px;
+}

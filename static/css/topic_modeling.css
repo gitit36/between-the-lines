@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+body {
+  background: black;
+}
+.search {
+/*  position: relative;*/
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  flex-direction: column;
+}
+
+
+#url {
+  width: 80%;
+  border: 3px solid #EFE5DC;
+  outline: none;
+  color: #EFE5DC;
+  background: black;
+}
+
+#url:focus{
+  color: #ff3333;
+}
+
+
+
+
+#text{
+  font-family: Nuetro;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  color: #EFE5DC;
+
+}
+
+#submit_form{
+  width: 700px;
+  height: 60px;
+  padding-left: 380px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+#submit_button{
+  width: 20%;
+  height: 60px;
+  border: 1px solid #ff3333;
+  background: #ff3333;
+  text-align: center;
+  color: #EFE5DC;
+}
+
+#result{
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border: 3px solid silver;
+}
+
+
+#title{
+  font-family: 'Bakbak One', cursive;
+  color: white;
+  padding-left: 170px;
+}

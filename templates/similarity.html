@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>ByteMe</title>
+  <link rel="stylesheet" href="../static/css/similarity.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+    <div class="search">
+      <h1 id="title">Good or bad policies? Let me check it for you!</h1>
+      <form method="post" id="submit_form" >
+        <input type="text" id="url" name="url" placeholder="Paste in URL">
+        <input type="submit" id="submit_button" value="Check Similarity!" >
+      </form>
+   </div>
+
+<div id="text">
+  <p id="result">
+    {{ result }}
+  </p>
+</div>
+<div class="examples"><a href="https://time.com/3986016/google-facebook-twitter-privacy-policies/">Check out good and bad examples of privacy policies!</a></div>
+</body>
+<script>
+  AOS.init();
+</script>
+
+
+</html>

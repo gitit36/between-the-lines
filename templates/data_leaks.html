@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>ByteMe</title>
+  <link rel="stylesheet" href="../static/css/data_leaks.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+
+
+<body>
+  
+  <div class="wrapper">
+    <i class="fa fa-home"></i>
+    <h1 class="outline">Clustering</h1>
+    <div id="container1">
+      <div id = "left">
+      {% for path in image_paths[:3] %}
+          <p> <img class="fade" src="{{ path }}" style="max-width: 500px; border-radius: 15px;" /></p>
+      {%endfor%}
+      </div>
+      <div id = "right">
+        <p>We used sk-learn to cluster our database of privacy policies into a similar group. Using this model, we were able to group any additional privacy policy into one of the clusters. We were also able to visualize the most significant words from each cluster to help us understand the differences between our clusters and between our individual policies.</p>
+        {% for path in image_paths[3:5] %}
+          <p> <img  class="fade" src="{{ path }}" style="max-width: 500px; border-radius: 15px;" /></p>
+        {%endfor%}
+      </div>
+    </div>
+
+    <h1 class="outline">Total Data Breaches in the World Overtime</h1>
+    <div id="container1">
+      <div id = "left">
+      {% for path in image_paths[6:9] %}
+          <p> <img  class="fade" src="{{ path }}" style="max-width: 500px; border-radius: 15px;" /></p>
+      {%endfor%}
+      </div>
+      <div id = "right">
+        <p  style="margin-bottom: 150px;">We cleaned the data collected and used matpotlib and pandas to generate these graphs.  </p>
+        {% for path in image_paths[9:] %}
+          <p> <img  class="fade" src="{{ path }}" style="max-width: 500px; border-radius: 15px;" /></p>
+        {%endfor%}
+      </div>
+    </div>
+    
+  </div>   
+</div>
+</body>
+
+<script>
+</script>
+
+</html>

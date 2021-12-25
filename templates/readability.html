@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>ByteMe</title>
+  <link rel="stylesheet" href="../static/css/readability.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<body>
+    <div class="search">
+    <h1 id="title">It would be funny if you can't read a 5th grade level policy page...</h1>
+    <form method="post" id="submit_form" >
+      <input type="text" id="url" name="url" placeholder="Paste in URL">
+      <input type="submit" id="submit_button" value="Check Readability!" >
+     </form>
+   </div>
+
+<div id="text">
+  <p id="result">
+    {{ score }}
+  </p>
+</div>
+</body>
+
+
+
+</html>

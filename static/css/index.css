@@ -1,0 +1,323 @@
+
+.titles{
+    font-family: Neutro;
+/*    display: flex;*/
+/*    flex-direction: column;*/
+
+
+
+}
+.intro{
+
+    height: 100vh;
+}
+#title1{
+    font-size: 9em;
+    text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+/*  color: #EFE5DC;*/
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #EFE5DC;
+
+}
+#title2{
+    font-size: 5em;
+    text-align: center;
+  margin: 0px 0px 0px 0px;
+  color: #EFE5DC;
+}
+#title3{
+    font-size: 5em;
+    text-align: center;
+    color: #EFE5DC;
+/*    color: #EFE5DC;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;*/
+  margin: 0px 0px 100px 0px;
+}
+#desc{
+    font-family: neutral;
+    text-align: center;
+    font-size: 2em;
+    color: #EFE5DC;
+}
+#line1{
+    height: 8px;
+    background: black;
+    margin: 20px;
+    width: 60%;
+}
+#line2{
+    height: 3px;
+    background: black;
+    margin: 20px;
+    width: 60%;
+    
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+*:before {
+    font-family: Neutro;
+
+}
+/*body {
+  padding: 2em;
+  background: #003;
+  color: #fff;
+}*/
+
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+.scroll-cards {
+
+  counter-reset: card;
+  position: relative;
+  display: block;
+  padding-bottom: 50vh;
+}
+
+.scroll-cards > .scroll-cards__item + .scroll-cards__item {
+  margin-top: 40vh;
+}
+
+.scroll-cards h1 {
+    font-family: Neutro;
+  position: sticky;
+  top: 2rem;
+  font-size: 1em;
+  margin: 0 0 0.5em;
+}
+/*.outline{
+      color: black;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #ff3333;
+}*/
+a {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+a {
+  /* Same as before */
+  background: linear-gradient(to right, #ff3333, #ff3333 50%, #EFE5DC 50%);
+}
+a {
+  /* Same as before */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+a {
+  /* Same as before */
+  transition: background-position 275ms ease;
+}
+a:hover {
+  background-position: 0 100%;
+}
+
+.scroll-cards__item {
+    font-family: Neutro;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+  --offset: 0.5em;
+  color: #EFE5DC;
+  position: sticky;
+  top: max(16vh, 10em);
+  padding: 2em 1.5em;
+  min-height: 19em;
+  background: black;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 5 * var(--offset));
+}
+/*span{
+    font-size: 250px;
+}*/
+
+@font-face {
+    font-family: Neutro;
+    src: url(Neutro-Bold.otf);
+}
+@font-face {
+    font-family: wild;
+    src: url(WILD-WORLD.otf);
+}
+@font-face {
+    font-family: rockstar;
+    src: url(Rockstar-ExtraBold.otf);
+}
+@font-face {
+    font-family: newake;
+    src: url(NewakeFont-Demo.otf);
+}
+@font-face {
+    font-family: neutral;
+    src: url(NeutralFace.otf);
+}
+@font-face {
+    font-family: migha;
+    src: url(Migha-Black.otf);
+}
+
+body{
+    
+    background: black;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+/*  margin: 0;*/
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+/*
+If you use SASS you can shorten this one here like this:
+
+@for $i from 0 through 5 {
+  &:nth-of-type(#{$i}) {
+    transform: translate(calc((#{$i} - 1) * var(--offset)), calc((#{$i} - 1) * var(--offset)));
+  }
+}
+*/
+.scroll-cards__item:nth-of-type(0) {
+  transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(1) {
+  transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(2) {
+  transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(3) {
+  transform: translate(calc((3 - 1) * var(--offset)), calc((3 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(4) {
+  transform: translate(calc((4 - 1) * var(--offset)), calc((4 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(5) {
+  transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
+}
+
+@media screen and (min-width: 37em) {
+  h1 {
+    font-size: 3em;
+  }
+  .scroll-cards__item {
+    --offset: 1em;
+    padding-left: 5em;
+  }
+  .scroll-cards__item:before {
+    counter-increment: card;
+    content: "0" counter(card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75em;
+    height: 2.75em;
+    background: #EFE5DC;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 1.25em;
+    top: 1.25em;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 62em) {
+  .scroll-cards h1 {
+    font-size: 3em;
+  }
+  .scroll-cards__item {
+    --offset: 1.25em;
+    max-width: 42em;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+.realistic-marker-highlight{
+  position:relative;
+}
+
+.realistic-marker-highlight:before{
+  content:"";
+  background-color:#ff3333;
+  width:100%;
+  height:1em;
+  position:absolute;
+  z-index:-1;
+  filter:url(#marker-shape);
+  left:-0.25em;
+  top:0.1em;
+  padding:0 0.25em;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+}
+nav {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 70px;
+    background: black;
+    border-style: solid;
+    border-width: 2px;
+    color: #EFE5DC;
+}
+
+nav li {
+    font-family: Neutro;
+    font-size: 1em;
+    display: inline-block;
+    padding: 10px 10px;
+}
+#center{
+
+    margin-left: 580px;
+}
+nav li a {
+    color: #757575;
+    text-transform: uppercase;
+}
