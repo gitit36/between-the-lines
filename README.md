@@ -1,7 +1,6 @@
 # between-the-lines
-Project in Programming and Data Sciences - 177-1218_FA21 TECH-UB 24 001-2
-
-Professor Joao Sedoc
+## Project in Programming and Data Sciences - 177-1218_FA21 TECH-UB 24 001-2 
+## Professor Joao Sedoc
 
 Web application to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling.
 
@@ -9,8 +8,9 @@ In a nutshell, a user can type in the url/name of the website in order to analys
 
 To run this program, go to the designated directory and type in your terminal:
 
+```
 python ppds.py
-
+```
 
 The following images are a preview of the homepage:
 
