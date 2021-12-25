@@ -4,7 +4,7 @@
 
 ***Web application to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling.***
 
-### Problem
+## Problem
 **Privacy policies are filled with jargon and are not made for the average user.**
 > 65% of personal data will be covered under a privacy regulation by 2023 (Gartner Inc.)
 
@@ -12,6 +12,14 @@
 > 79% of respondents are concerned about how companies are using their personal data (Pew Research)
 
 
+## Solution
+1. Help the user understand how a privacy policy compares in terms of major companies privacy policies' using a sentence transformers ML model
+2. Summarize privacy policies in a way that is user friendly and readable using ML summarization models
+3. Identify common topics across data policies through LDA topic modeling
+
+## Target Customer
+**Internet Users**
+Primary age group 15-40 due to frequency of internet usage that poses privacy vulnerabilities
 
 In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
 
