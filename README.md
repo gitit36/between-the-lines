@@ -5,14 +5,13 @@
 *** Web application to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling. ***
 
 ### Problem
+Privacy policies are filled with jargon and are not made for the average user.
+> 65% of personal data will be covered under a privacy regulation by 2023 (Gartner Inc.)
 
-> 65% of personal data will be covered
-under a privacy regulation by 2023
-(Gartner Inc.)
+Users have lost control over how their data is collected and where their data is stored.
+> 79% of respondents are concerned about how companies are using their personal data (Pew Research)
 
-> 79% of respondents are concerned
-about how companies are using their
-personal data (Pew Research)
+
 
 In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
 
