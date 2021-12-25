@@ -2,7 +2,7 @@
 
 ***Web application (*Between The Lines*) to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling.***
 
-In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
+We worked in a group of four and I worked on data collection, data processing, database management, unsupervised classification - topic modeling, and project planning. On this web platform, a user can type in the url/name of the website in order to analyse the privacy policies.
 
 ## Problem
 **Privacy policies are filled with jargon and are not made for the average user.**
