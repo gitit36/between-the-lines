@@ -2,7 +2,17 @@
 ## Project in Programming and Data Sciences - 177-1218_FA21 TECH-UB 24 001-2 
 ## Professor Joao Sedoc
 
-Web application to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling.
+*** Web application to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling. ***
+
+### Problem
+
+> 65% of personal data will be covered
+under a privacy regulation by 2023
+(Gartner Inc.)
+
+> 79% of respondents are concerned
+about how companies are using their
+personal data (Pew Research)
 
 In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
 
