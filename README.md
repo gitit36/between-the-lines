@@ -4,6 +4,8 @@
 
 ***Web application to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling.***
 
+In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
+
 ## Problem
 **Privacy policies are filled with jargon and are not made for the average user.**
 > 65% of personal data will be covered under a privacy regulation by 2023 (Gartner Inc.)
@@ -21,7 +23,17 @@
 **Internet Users**
 Primary age group 15-40 due to frequency of internet usage that poses privacy vulnerabilities
 
-In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
+## Features
+### Summarization
+> We used the t5 transfer learning model to generate summarizations for the policies.
+### Similarity Analysis
+> We used a sentence transformers model to generate text embedding to generate scores based on semantic similarity
+### Readability
+> Generate FleschKincaid score for the privacy policies to determine their grade level
+### Topic Modeling
+> The task of identifying topics that best describes our database of privacy policies
+
+## How to run
 
 To run this program, go to the designated directory and type in your terminal:
 
