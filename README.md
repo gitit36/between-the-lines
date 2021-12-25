@@ -4,9 +4,9 @@ Web application to render more transparent and approachable privacy policies. Fu
 In a nutshell, a user can type in the url/name of the website in order to analyse the privacy policies.
 
 To run this program, go to the designated directory and type in your terminal:
-
+'''
 python ppds.py
-
+'''
 
 The following images are a preview of the homepage:
 
