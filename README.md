@@ -1,4 +1,4 @@
-# Project in Programming and Data Sciences TECH-UB 24 | Professor Joao Sedoc
+# Project in Programming and Data Sciences TECH-UB 24 | Professor Joao Sedoc @ NYU Stern
 
 ***Web application (*Between The Lines*) to render more transparent and approachable privacy policies. Functionalities include privacy policy summarization, similarity analysis, readability score, and topic modeling.***
 
